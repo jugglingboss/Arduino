@@ -8,9 +8,12 @@
 const char* ssid = "e46f139a4405";
 const char* password = "H38A3S8B2WA732LB";
 const char* mqtt_server = "192.168.1.9";
+long int t;
 int led1 = 4;
 int led2 = 5;
 int air = 3;
+int sensor = 12;
+int x;
  
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -41,11 +44,22 @@ void callback(char* topic, byte* payload, unsigned int length) {
       Serial.println("reverse");
       digitalWrite(led2, LOW);
       digitalWrite(led1, HIGH);
-      delay(12900);
-
+      t = millis();
+      x=1;
+      while((millis()-t<16500) && (1==x)){
+       if(0==digitalRead(sensor)){
+        delay(50);
+          if(0==digitalRead(sensor)){
+            x=0;
+            Serial.println("in if loop");
+            delay(400);
+          }
+        }
+      }
+     
       Serial.println("stop");
-      digitalWrite(led2, LOW);
       digitalWrite(led1, LOW);
+
     }
     if (receivedChar == '1')
     {
@@ -63,10 +77,22 @@ void callback(char* topic, byte* payload, unsigned int length) {
       Serial.println("reverse");
       digitalWrite(led2, LOW);
       digitalWrite(led1, HIGH);
-      delay(12900);
-
+      t = millis();
+      x=1;
+      while((millis()-t<16500) && (1==x)){
+       if(0==digitalRead(sensor)){
+        delay(50);
+          if(0==digitalRead(sensor)){
+            x=0;
+            Serial.println("in if loop");
+            delay(400);
+          }
+        }
+      }
+     
       Serial.println("stop");
       digitalWrite(led1, LOW);
+
     }
     if (receivedChar == '4')
     {
@@ -110,7 +136,7 @@ void setup()
  client.setServer(mqtt_server, 1883);
  client.setCallback(callback);
  
- pinMode(ledPin, OUTPUT);
+ pinMode(sensor, INPUT);
 
  
 }
