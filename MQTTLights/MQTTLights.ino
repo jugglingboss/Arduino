@@ -6,12 +6,13 @@
 
 Servo servo;
  
-// Connect to the WiFi 
+// Connect to the WiFi
 const char* ssid = "e46f139a4405";
 const char* password = "H38A3S8B2WA732LB";
 const char* mqtt_server = "192.168.1.9";
 
 int light = 16;
+int relay =4;
  
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -32,15 +33,18 @@ void callback(char* topic, byte* payload, unsigned int length) {
       servo.write(95);
       delay(100);
       servo.write(116);
+      digitalWrite(relay,LOW);
 
      
     }
   if (receivedChar == '5')
   {
+
       Serial.println("off");
       servo.write(179);
       delay(100);
       servo.write(116);
+      digitalWrite(relay,LOW);
 
   
     }
@@ -52,6 +56,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
 void reconnect() {
  // Loop until we're reconnected
  while (!client.connected()) {
+  digitalWrite(relay,HIGH);
  Serial.print("Attempting MQTT connection...");
  // Attempt to connect
  if (client.connect("ESP8266 Client1")) {
@@ -65,12 +70,14 @@ void reconnect() {
   // Wait 5 seconds before retrying
   delay(5000);
   }
+  digitalWrite(relay,LOW);
  }
 }
  
 void setup()
 {
-
+ pinMode(relay,OUTPUT);
+ 
  servo.attach(16);
  servo.write(179);
  delay(2000);

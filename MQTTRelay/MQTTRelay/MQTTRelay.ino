@@ -3,19 +3,17 @@
 #include <PubSubClient.h>
 #include <Wire.h>
 
- 
-// Connect to the WiFi 
+// Connect to the WiFi
 const char* ssid = "e46f139a4405";
 const char* password = "H38A3S8B2WA732LB";
 const char* mqtt_server = "192.168.1.9";
-
 
 int relay=5;
 int button=4;
 int current=1;
 int light=1;
 long int c;
- 
+
 WiFiClient espClient;
 PubSubClient client(espClient);
  
@@ -31,12 +29,17 @@ void callback(char* topic, byte* payload, unsigned int length) {
   if (receivedChar == '6')
   // ESP8266 Huzzah outputs are "reversed"
   {
-
+    Serial.println("light on");
+    digitalWrite(relay,0);
+      
      
     }
   if (receivedChar == '7')
   {
+    Serial.println("light off");
+    digitalWrite(relay, 1);
 
+     
   
     }
   }
@@ -47,13 +50,13 @@ void callback(char* topic, byte* payload, unsigned int length) {
 void reconnect() {
  // Loop until we're reconnected
  while (!client.connected()) {
+
  Serial.print("Attempting MQTT connection...");
  // Attempt to connect
- if (client.connect("ESP8266 Client1")) {
+ if (client.connect("ESP8266 Client2")) {
   Serial.println("connected");
   // ... and subscribe to topic
-  client.subscribe("Lights");
-  //client.subscribe("relay");
+  client.subscribe("relay");
  } else {
   Serial.print("failed, rc=");
   Serial.print(client.state());
@@ -61,24 +64,24 @@ void reconnect() {
   // Wait 5 seconds before retrying
   delay(5000);
   }
+
  }
 }
  
 void setup()
 {
 
-  pinMode(relay,OUTPUT);
-  pinMode(button, INPUT_PULLUP);
-  Serial.begin(115200);
-  digitalWrite(relay,light);
-  Serial.println("starting relay");
-
-
+ 
+ Serial.begin(115200);
  
  client.setServer(mqtt_server, 1883);
  client.setCallback(callback);
  
+  pinMode(relay,OUTPUT);
+  pinMode(button, INPUT_PULLUP);
 
+  digitalWrite(relay,light);
+  Serial.println("starting relay");
 
 
  
