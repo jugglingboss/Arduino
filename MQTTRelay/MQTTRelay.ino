@@ -52,8 +52,8 @@ void reconnect() {
  if (client.connect("ESP8266 Client1")) {
   Serial.println("connected");
   // ... and subscribe to topic
-  //client.subscribe("Lights");
-  client.subscribe("relay");
+  client.subscribe("Lights");
+  //client.subscribe("relay");
  } else {
   Serial.print("failed, rc=");
   Serial.print(client.state());
