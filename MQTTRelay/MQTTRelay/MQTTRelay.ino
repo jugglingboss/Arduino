@@ -29,15 +29,17 @@ void callback(char* topic, byte* payload, unsigned int length) {
   if (receivedChar == '6')
   // ESP8266 Huzzah outputs are "reversed"
   {
+    light=0;
     Serial.println("light on");
-    digitalWrite(relay,0);
+    digitalWrite(relay,light);
       
      
     }
   if (receivedChar == '7')
   {
+    light=1;
     Serial.println("light off");
-    digitalWrite(relay, 1);
+    digitalWrite(relay,light);
 
      
   
