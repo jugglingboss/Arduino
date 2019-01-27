@@ -107,12 +107,14 @@ void loop()
                   light=0;
                   Serial.println("light on");
                   digitalWrite(relay,light);
+                  delay(10);
                   
                 }
                 else if (light==0){
                   light=1;
                   Serial.println("light off");
                   digitalWrite(relay,light);
+                  delay(10);
                   
                 }
                
