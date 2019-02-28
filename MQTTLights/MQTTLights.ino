@@ -31,7 +31,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   {
       Serial.println("on");
       servo.write(95);
-      delay(100);
+      delay(300);
       servo.write(116);
       digitalWrite(relay,LOW);
 
@@ -41,8 +41,8 @@ void callback(char* topic, byte* payload, unsigned int length) {
   {
 
       Serial.println("off");
-      servo.write(179);
-      delay(100);
+      servo.write(170);
+      delay(300);
       servo.write(116);
       digitalWrite(relay,LOW);
 
