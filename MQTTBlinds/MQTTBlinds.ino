@@ -5,9 +5,9 @@
 
  
 // Connect to the WiFi
-const char* ssid = "e46f139a4405";
-const char* password = "H38A3S8B2WA732LB";
-const char* mqtt_server = "192.168.1.9";
+const char* ssid = "NETGEAR40";
+const char* password = "littlegrasspineapple36282";
+const char* mqtt_server = "10.0.0.200";
 long int t;
 int led1 = 4; //purple
 int led2 = 5; //blue

@@ -4,9 +4,9 @@
 #include <Wire.h>
 
 // Connect to the WiFi
-const char* ssid = "e46f139a4405";
-const char* password = "H38A3S8B2WA732LB";
-const char* mqtt_server = "192.168.1.9";
+const char* ssid = "NETGEAR40";
+const char* password = "littlegrasspineapple36282";
+const char* mqtt_server = "10.0.0.200";
 
 int relay=5;
 int button=4;
