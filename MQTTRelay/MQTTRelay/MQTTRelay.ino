@@ -4,9 +4,9 @@
 #include <Wire.h>
 
 // Connect to the WiFi
-const char* ssid = "e46f139a4405";
-const char* password = "H38A3S8B2WA732LB";
-const char* mqtt_server = "192.168.1.9";
+const char* ssid = "NETGEAR40";
+const char* password = "littlegrasspineapple36282";
+const char* mqtt_server = "10.0.0.200";
 
 int relay=5;
 int button=4;
@@ -29,15 +29,17 @@ void callback(char* topic, byte* payload, unsigned int length) {
   if (receivedChar == '6')
   // ESP8266 Huzzah outputs are "reversed"
   {
+    light=0;
     Serial.println("light on");
-    digitalWrite(relay,0);
+    digitalWrite(relay,light);
       
      
     }
   if (receivedChar == '7')
   {
+    light=1;
     Serial.println("light off");
-    digitalWrite(relay, 1);
+    digitalWrite(relay,light);
 
      
   
@@ -105,12 +107,14 @@ void loop()
                   light=0;
                   Serial.println("light on");
                   digitalWrite(relay,light);
+                  delay(10);
                   
                 }
                 else if (light==0){
                   light=1;
                   Serial.println("light off");
                   digitalWrite(relay,light);
+                  delay(10);
                   
                 }
                
