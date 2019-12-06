@@ -31,389 +31,389 @@ void loop() {
       lcd.print("I Love Bebe");
       delay(2000);
     }
-    if (2 == ran) {
+    else if (2 == ran) {
       lcd.clear();
       lcd.print("Bebe Loves Bebe");
       delay(2000);
     }
-    if (3 == ran) {
+    else if (3 == ran) {
       lcd.clear();
       lcd.print("I Love You");
       delay(2000);
     }
-    if (4 == ran) {
+    else if (4 == ran) {
       lcd.clear();
       lcd.print("Michael Loves");
       lcd.setCursor(0,1);
       lcd.print("Eva");
       delay(2000);
     }
-    if (5 == ran) {
+    else if (5 == ran) {
       lcd.clear();
       lcd.print("Big Bebe Loves");
       lcd.setCursor(0,1);
       lcd.print("Little Bebe");
       delay(2000);
     }
-    if (6 == ran) {
+    else if (6 == ran) {
       lcd.clear();
       lcd.print("You Are My Best");
       lcd.setCursor(0,1);
       lcd.print("Friend");
       delay(2000);
     }
-    if (7 == ran) {
+    else if (7 == ran) {
       lcd.clear();
       lcd.print("Bebe + Bebe =");
       lcd.setCursor(0,1);
       lcd.print("Bebebebe");
       delay(2000);
     }
-    if (8 == ran) {
+    else if (8 == ran) {
       lcd.clear();
       lcd.print("8/7/16");
       delay(2000);
     }
-    if (9 == ran) {
+    else if (9 == ran) {
       lcd.clear();
       lcd.print("Bebe + Bebe =");
       lcd.setCursor(0,1);
       lcd.print("True Love");
       delay(2000);
     }
-    if (10 == ran) {
+    else if (10 == ran) {
       lcd.clear();
       lcd.print("Bebe + Bebe =");
       lcd.setCursor(0,1);
       lcd.print("Two Bebes");
       delay(2000);
     }
-    if (11 == ran) {
+    else if (11 == ran) {
       lcd.clear();
       lcd.print("Eva Loves");
       lcd.setCursor(0,1);
       lcd.print("Michael");
       delay(2000);
     }
-     if (12 == ran) {
+     else if (12 == ran) {
       lcd.clear();
       lcd.print("Michael Loves");
       lcd.setCursor(0,1);
       lcd.print("Evapizzelle");
       delay(2000);
    }
-   if (13 == ran) {
+   else if (13 == ran) {
       lcd.clear();
       lcd.print("Eva is the ");
       lcd.setCursor(0,1);
       lcd.print("prettiest girl");
       delay(2000);
     }
-    if (14 == ran) {
+    else if (14 == ran) {
       lcd.clear();
       lcd.print("Evapizzelle is");
       lcd.setCursor(0,1);
       lcd.print("the best");
       delay(2000);
     }
-    if (15 == ran) {
+    else if (15 == ran) {
       lcd.clear();
       lcd.print("My Bebe is");
       lcd.setCursor(0,1);
       lcd.print("super smart");
       delay(2000);
     }
-    if (16 == ran) {
+    else if (16 == ran) {
       lcd.clear();
       lcd.print("You are");
       lcd.setCursor(0,1);
       lcd.print("awesome");
       delay(2000);
     }
-    if (17 == ran) {
+    else if (17 == ran) {
       lcd.clear();
       lcd.print("I love you with");
       lcd.setCursor(0,1);
       lcd.print("all my heart");
       delay(2000);
     }
-    if (18 == ran) {
+    else if (18 == ran) {
       lcd.clear();
       lcd.print("I think about");
       lcd.setCursor(0,1);
       lcd.print("you everyday");
       delay(2000);
     }
-    if (19 == ran) {
+    else if (19 == ran) {
       lcd.clear();
       lcd.print("<3<3<3<3<3<3<3<3");
       lcd.setCursor(0,1);
       lcd.print("<3<3<3<3<3<3<3<3");
       delay(2000);
     }
-    if (20 == ran) {
+    else if (20 == ran) {
       lcd.clear();
       lcd.print("Hey Boobie");
       delay(2000);
     }
-    if (21 == ran) {
+    else if (21 == ran) {
       lcd.clear();
       lcd.print("You are my");
       lcd.setCursor(0,1);
       lcd.print("polynesian");
       delay(2000);
     }
-    if (22 == ran) {
+    else if (22 == ran) {
       lcd.clear();
       lcd.print("How are you");
       lcd.setCursor(0,1);
       lcd.print("doing today?");
       delay(2000);
     }
-    if (23 == ran) {
+    else if (23 == ran) {
       lcd.clear();
       lcd.print("Bebe + Bebe =");
       lcd.setCursor(0,1);
       lcd.print("<3<3<3<3<3<3<3<3<3");
       delay(2000);
     }
-     if (24 == ran) {
+     else if (24 == ran) {
       lcd.clear();
       lcd.print(":)");
       lcd.setCursor(0,1);
     }
-    if (25 == ran) {
+    else if (25 == ran) {
       lcd.clear();
       lcd.print(";)");
       delay(2000);
     }
-    if (26 == ran) {
+    else if (26 == ran) {
       lcd.clear();
       lcd.print(":P");
       delay(2000);
     }
-    if (27 == ran) {
+    else if (27 == ran) {
       lcd.clear();
       lcd.print("Bebes love golf");
       delay(2000);
     }
-    if (28 == ran) {
+    else if (28 == ran) {
       lcd.clear();
       lcd.print("Bebes love");
       lcd.setCursor(0,1);
       lcd.print("racket ball");
       delay(2000);
     }
-    if (29 == ran) {
+    else if (29 == ran) {
       lcd.clear();
       lcd.print("Bebes love pico");
       delay(2000);
     }
-    if (30 == ran) {
+    else if (30 == ran) {
       lcd.clear();
       lcd.print("Bebes love");
       lcd.setCursor(0,1);
       lcd.print("wrestling");
       delay(2000);
     }
-    if (31 == ran) {
+    else if (31 == ran) {
       lcd.clear();
       lcd.print("Bebebebebebebebe");
       lcd.setCursor(0,1);
       lcd.print("bebebebebebebebe");
       delay(2000);
     }
-    if (32 == ran) {
+    else if (32 == ran) {
       lcd.clear();
       lcd.print("What's up Bebe?");
       delay(2000);
     }
-    if (33 == ran) {
+    else if (33 == ran) {
       lcd.clear();
       lcd.print("Bebes love Jesus");
       delay(2000);
     }
-    if (34 == ran) {
+    else if (34 == ran) {
       lcd.clear();
       lcd.print("Evapizzelle");
       lcd.setCursor(0,1);
       lcd.print("loves pizzelles");
       delay(2000);
     }
-    if (35 == ran) {
+    else if (35 == ran) {
       lcd.clear();
       lcd.print("Bebes love");
       lcd.setCursor(0,1);
       lcd.print("Disney");
       delay(2000);
     }
-    if (36 == ran) {
+    else if (36 == ran) {
       lcd.clear();
       lcd.print("I am in love");
       lcd.setCursor(0,1);
       lcd.print("with all of you");
       delay(2000);
     }
-    if (37 == ran) {
+    else if (37 == ran) {
       lcd.clear();
       lcd.print("I am lucky you");
       lcd.setCursor(0,1);
       lcd.print("fell for me");
       delay(2000);
     }
-    if (38 == ran) {
+    else if (38 == ran) {
       lcd.clear();
       lcd.print("I love you so");
       lcd.setCursor(0,1);
       lcd.print("much");
       delay(2000);
     }
-    if (39 == ran) {
+    else if (39 == ran) {
       lcd.clear();
       lcd.print("You changed my");
       lcd.setCursor(0,1);
       lcd.print("world");
       delay(2000);
     }
-    if (40 == ran) {
+    else if (40 == ran) {
       lcd.clear();
       lcd.print("My favorite time");
       lcd.setCursor(0,1);
       lcd.print("is bebe time");
       delay(2000);
     }
-    if (41 == ran) {
+    else if (41 == ran) {
       lcd.clear();
       lcd.print("I am excited for");
       lcd.setCursor(0,1);
       lcd.print("our future");
       delay(2000);
     }
-    if (42 == ran) {
+    else if (42 == ran) {
       lcd.clear();
       lcd.print("You look cute in");
       lcd.setCursor(0,1);
       lcd.print("this picture");
       delay(2000);
     }
-    if (43 == ran) {
+    else if (43 == ran) {
       lcd.clear();
       lcd.print("I know what love");
       lcd.setCursor(0,1);
       lcd.print("because of you");
       delay(2000);
     }
-    if (44 == ran) {
+    else if (44 == ran) {
       lcd.clear();
       lcd.print("You're my happy");
       lcd.setCursor(0,1);
       lcd.print("place");
       delay(2000);
     }
-    if (45 == ran) {
+    else if (45 == ran) {
       lcd.clear();
       lcd.print("I love watching");
       lcd.setCursor(0,1);
       lcd.print("movies with you");
       delay(2000);
     }
-    if (46 == ran) {
+    else if (46 == ran) {
       lcd.clear();
       lcd.print("I <3 you");
       delay(2000);
     }
-    if (47 == ran) {
+    else if (47 == ran) {
       lcd.clear();
       lcd.print("Thinking about");
       lcd.setCursor(0,1);
       lcd.print("you");
       delay(2000);
     }
-    if (48 == ran) {
+    else if (48 == ran) {
       lcd.clear();
       lcd.print("You're very");
       lcd.setCursor(0,1);
       lcd.print("special");
       delay(2000);
     }
-    if (49 == ran) {
+    else if (49 == ran) {
       lcd.clear();
       lcd.print("My heart is");
       lcd.setCursor(0,1);
       lcd.print("yours");
       delay(2000);
     }
-    if (50 == ran) {
+    else if (50 == ran) {
       lcd.clear();
       lcd.print("You motivate me");
       lcd.setCursor(0,1);
       lcd.print("to be better");
       delay(2000);
     }
-    if (51 == ran) {
+    else if (51 == ran) {
       lcd.clear();
       lcd.print("Two bebes are ");
       lcd.setCursor(0,1);
       lcd.print("better than one");
       delay(2000);
     }
-    if (52 == ran) {
+    else if (52 == ran) {
       lcd.clear();
       lcd.print("I love your");
       lcd.setCursor(0,1);
       lcd.print("squishy tummy");
       delay(2000);
     }
-    if (53 == ran) {
+    else if (53 == ran) {
       lcd.clear();
       lcd.print("I gonna eat ya");
       lcd.setCursor(0,1);
       lcd.print("one day");
       delay(2000);
     }
-    if (54 == ran) {
+    else if (54 == ran) {
       lcd.clear();
       lcd.print("Remember the");
       lcd.setCursor(0,1);
       lcd.print("Kmart party?");
       delay(2000);
     }
-    if (55 == ran) {
+    else if (55 == ran) {
       lcd.clear();
       lcd.print("I love our");
       lcd.setCursor(0,1);
       lcd.print("annual pedicure");
       delay(2000);
     }
-    if (56 == ran) {
+    else if (56 == ran) {
       lcd.clear();
       lcd.print("I'm ready for");
       lcd.setCursor(0,1);
       lcd.print("the bike trip");
       delay(2000);
     }
-    if (57 == ran) {
+    else if (57 == ran) {
       lcd.clear();
       lcd.print("Can we get ");
       lcd.setCursor(0,1);
       lcd.print("sushi tonight?");
       delay(2000);
     }
-    if (58 == ran) {
+    else if (58 == ran) {
       lcd.clear();
       lcd.print("Loki is the");
       lcd.setCursor(0,1);
       lcd.print("chonk");
       delay(2000);
     }
-    if (59 == ran) {
+    else if (59 == ran) {
       lcd.clear();
       lcd.print("Where is the");
       lcd.setCursor(0,1);
       lcd.print("closest Goodwill");
       delay(2000);
     }
-    if (60 == ran) {
+    else if (60 == ran) {
       lcd.clear();
       lcd.print("Yaaaaa I love");
       lcd.setCursor(0,1);
