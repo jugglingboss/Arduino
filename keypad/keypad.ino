@@ -2,6 +2,10 @@
 
 const byte ROWS = 4; 
 const byte COLS = 4; 
+char customKey  = 'E';
+String gamemode;
+String drank;
+
 
 char hexaKeys[ROWS][COLS] = {
   {'1', '2', '3', 'A'},
@@ -20,7 +24,48 @@ void setup(){
 }
   
 void loop(){
-  char customKey = customKeypad.getKey();
+  while (customKey != 'A' || customKey != 'B' || customKey != 'C' || customKey != 'D'){
+    customKey  = customKeypad.getKey();
+    if (customKey == 'A')
+      {
+        Serial.println("You Typed A");
+        gamemode = "regular";     
+      }
+    if (customKey == 'B')
+      {
+        Serial.println("You Typed B");
+        gamemode="tilted";
+      }
+    if (customKey == 'C')
+      {
+        Serial.println("You Typed C");
+        gamemode = "risky";
+      }
+    if (customKey == 'D')
+      {
+        Serial.println("You Typed D");
+        gamemode = "hardcore";
+      }     
+    }
+  while (customKey != '*')
+  {
+    drank = "";
+    customKey  = customKeypad.getKey();
+    if (customKey != '*' || customKey != '#' || customKey != 'A' || customKey != 'B' || customKey != 'C' || customKey != 'D')
+    {
+      drank += customKey;
+      customKey  = customKeypad.getKey();
+      if (customKey != '*' || customKey != '#' || customKey != 'A' || customKey != 'B' || customKey != 'C' || customKey != 'D')
+      {
+        drank += customKey;
+      }
+      else if (customKey == '#')
+      {
+        CallServerMethod(drank.toInt());
+      }
+    }  
+  }
+  
   
   if (customKey){
     Serial.println(customKey);
